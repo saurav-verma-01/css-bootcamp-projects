@@ -1,0 +1,55 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: whitesmoke;
+}
+
+table {
+  background-color: white;
+  width: 70%;
+  max-width: 800px;
+  margin-inline: auto;
+  margin-block: 100px;
+  font-weight: 500;
+
+  th,
+  td {
+    padding: 10px;
+    border: 1px soldi red;
+    transition: background 0.2s ease-in-out;
+  }
+
+  th:is(:hover, :focus) {
+    background-color: rgb(4, 100, 195);
+  }
+  td:is(:hover, :focus) {
+    background-color: palegreen;
+  }
+
+  tfoot td:hover {
+    background-color: #444;
+  }
+}
+
+caption {
+  padding: 10px;
+  background-color: navy;
+  color: white;
+  font-size: 24px;
+  font-weight: 600;
+}
+thead {
+  background-color: dodgerblue;
+  color: white;
+}
+
+tbody tr:nth-child(2n) {
+  background-color: gainsboro;
+}
+tbody tr:nth-child(2n + 1) {
+  background-color: ghostwhite;
+}
+
+tfoot {
+  background-color: #222;
+  color: #ccc;
+}
