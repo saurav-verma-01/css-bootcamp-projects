@@ -10,12 +10,15 @@ table {
   margin-inline: auto;
   margin-block: 100px;
   font-weight: 500;
+  border-collapse: collapse;
+  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.3);
 
   th,
   td {
-    padding: 10px;
-    border: 1px soldi red;
-    transition: background 0.2s ease-in-out;
+    padding: 10px 15px;
+
+    transition: background 0.2s ease-in-out, cursor 0.2s ease-in-out;
+    border: 1px solid lightseagreen;
   }
 
   th:is(:hover, :focus) {
@@ -23,6 +26,7 @@ table {
   }
   td:is(:hover, :focus) {
     background-color: palegreen;
+    cursor: pointer;
   }
 
   tfoot td:hover {
@@ -32,10 +36,11 @@ table {
 
 caption {
   padding: 10px;
-  background-color: navy;
+  background-color: royalblue;
   color: white;
   font-size: 24px;
   font-weight: 600;
+  border-bottom: 2px solid navy;
 }
 thead {
   background-color: dodgerblue;
